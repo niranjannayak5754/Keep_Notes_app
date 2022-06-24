@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:id="@+id/notesLayout"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/flag"/>
+
+    <TextView
+        android:paddingHorizontal="16dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:text="@string/title"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:paddingHorizontal="16dp"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="2dp"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        android:text="Hello Aabid Beta! how are you"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
